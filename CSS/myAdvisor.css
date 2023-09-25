@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Rubik;
+    box-sizing: border-box;/*box sizing : จะคำนวณ width และ height ให้ และจะมาคู่กับ width,height 100%*/
+}
+body{
+    color: white;
+}
+.header{
+   position: fixed;
+   top:0;
+   left: 0;
+   width: 100%;
+   padding: 30px 5%;/*ตัวแรก : บน-ล่าง ตัวสอง : ซ้าย-ขวา*/
+   background-color: black; 
+   display: flex;/*มาคู่กับ justify-content และ align-item*/
+   justify-content: space-between;/*แยกตัว content ออกจากกัน*/
+    align-items: center;
+    z-index: 100;/*ขนาดที่ content ยื่นออกมาข้างหน้า*/
+}
+.logo{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    border-radius:10px;
+    color: black;
+    padding: 10px;
+    background-color: white;
+}
+.icon_menu{
+    display: none;
+    width: 35px;
+    position: absolute;
+    top:25px;
+    right: 25px;     
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.advisor_title{
+    padding: 10px;
+    background-color: black;
+    margin-top: 12vh;
+    margin-left: 1%;
+    border-radius: 10px;
+    transition: .4s;
+    width: 10%;
+    text-align: center;
+}
+.advisor_title:hover{
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+
+
+.My-Advisor{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    
+}
+.Advisor_img{
+    background-color: black;
+    /*width: 600px;/*พวกนีี้จะ fix ตาม ccontent*/ 
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+.Advisor_img img{
+    border-radius: 10px;
+    height: 100%;
+    padding: 5%;
+    
+}
+.Advisor_des{
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.Advisor_des span{
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
+
+}
+.Advisor_des p{
+    font-size: 34px;
+}
+@media(max-width : 1300px){
+    .Advisor_img {
+        display: block;
+        flex-direction: row;
+    }
+    .Advisor_img img{
+        position: relative;
+        left: 35%;
+        right: 35%;
+        height: 100%;
+    }
+    .advisor_title{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+    }
+    .navbar{
+        display: none;
+        
+    }
+    .icon_menu{
+        display: block;
+    }
+}
+@media(max-width:900px){
+    .Advisor_img img{
+        position: relative;
+        left: 28%;
+        right: 28%;
+    }
+}
+@media(max-width:600px){
+    .Advisor_img img{
+        position: relative;
+        left: 20%;
+        right: 20%;
+        width: auto;
+    }
+}
+   
