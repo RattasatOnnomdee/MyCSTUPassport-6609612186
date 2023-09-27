@@ -1,113 +1,186 @@
-body{
+*{
     margin: 0;
+    padding: 0;
     font-family: Rubik;
+    box-sizing: border-box;/*box sizing : จะคำนวณ width และ height ให้ และจะมาคู่กับ width,height 100%*/
 }
-.intro{
-    font-size: 36px;
-    margin-left: 50px;
-    cursor: pointer;
-    margin-right: auto;
+body{
+    color: white;
+    width: 100%;
 }
-.title-info{
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items:center ;
-    background-color: black;
-    color: white;    
+.header{
+   position: relative;
+   top:0;
+   left: 0;
+   width: 100%;
+   padding: 30px 5%;/*ตัวแรก : บน-ล่าง ตัวสอง : ซ้าย-ขวา*/
+   background-color: black; 
+   display: flex;/*มาคู่กับ justify-content และ align-item*/
+   justify-content: space-between;/*แยกตัว content ออกจากกัน*/
+    align-items: center;
+    z-index: 100;/*ขนาดที่ content ยื่นออกมาข้างหน้า*/
 }
-li ,a{
+.logo{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.navbar a{
+    font-size: 20px;
     text-decoration: none;
     color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    transition: 0.3s;
 }
-.navbar{
-    cursor: pointer;
-    font-size: 20px;
-    margin-right: 30px;
-}
-.nav_links{
-    list-style: none;
-    padding-left: 20px;
-}
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-.nav_links li a{
-    transition: all 0.3s;
-}
-.nav_links li a:hover{
-    border: solid 1px black ;
-    border-radius: 10px;
+.navbar a:hover{
+    border-radius:10px;
+    color: black;
     padding: 10px;
     background-color: white;
-    color: black;
 }
-
-
-.homepage{
-    color: black;
-}
-.title_homepage{
-    margin-left: 35px;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    border: solid 5px black;
-    color: white;
-    background-color: black;
-    padding: 20px 30px;
-    align-items: center;
-    transition: all 0.2s;
-}
-.title_homepage:hover{
+.icon_menu{
+    display: none;
+    width: 35px;
+    position: absolute;
+    top:25px;
+    right: 25px;     
     background-color: white;
+    border-radius: 5px;
+}
+
+
+.homepage_title{
+    padding: 10px;
+    background-color: black;
+    margin-top: 2vh;
+    margin-left: 1%;
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    transition: .4s;
+    width: 190px;
+    text-align: center;
+    font-size: auto;
+}
+.homepage_title:hover{
     color: black;
+    background: white;
+    border: 2px solid black;
 }
 
 
 .img-info{
-    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: black;
 }
-
-.img_title{
-    display: inline-block;
-}
 .My-picture{
-    margin: 0;
-    width: 300px;
-    padding: 40px 50px;
-    border-radius: 70px;
-    
+    position: static;
+    border-radius:100px ;
+    padding: 5%;
+    width: 28%;
 }
 .img_describe{
-    margin: 0 auto;
-    font-size: 28px;
-    transform: translate(-0%, -50%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+    padding: 1%;
+}
+.img_describe p{
+    font-size: 34px;
+    font-weight: normal;
+    padding-top:34px;
+}
+.img_describe span{
+    font-size: 35px;
+    font-weight: 700;
+    font-style: italic;
 }
 
-
+hr{
+    border: 1px solid white;
+    width: 100%;
+}
 
 .video-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-top: 50px;
     background-color: black;
     color: white;
-    justify-content: left;
 }
 .video-edit{
-    margin-right: 0;
-    display: block;
-    margin: 0 auto;
-    width: 500px;
-    height: 300px;
+    display: inline-block;
+    position: relative;
+    left: 21%;
+    width: 55%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .video-title{
-    display: flex;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 20px;
     font-size: 35px;
+    position: static;
+    padding-bottom: 32px;
+    padding-left: 10px;
+}
+
+
+@media(max-width : 1300px){
+    .homepage_title{
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+    }
+    .homepage_title span{
+        display: block;
+    }
+    .navbar{
+        display: none;
+        
+    }
+    .icon_menu{
+        display: block;
+    }
+    .img-info{
+        display: block;
+    }
+    .My-picture{
+        position: relative;
+        width: 40%;
+        left: 32%;
+        border-radius: 75px;
+    }
+    .img_describe{
+        padding-left: 30px;
+    }
+    .video-edit{
+        display: inline-block;
+        position: relative;
+        left: 15%;
+        width: 70%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+@media (max-width: 900px){
+    .My-picture{
+        position: relative;
+        width: 40%;
+        left: 28%;
+        right: 30%;
+        border-radius: 50px;
+    }
+    .video-edit{
+        left: 15%;
+        width: 70%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }

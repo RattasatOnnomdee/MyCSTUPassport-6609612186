@@ -8,7 +8,7 @@ body{
     color: white;
 }
 .header{
-   position: fixed;
+   position: relative;
    top:0;
    left: 0;
    width: 100%;
@@ -53,11 +53,11 @@ body{
 .advisor_title{
     padding: 10px;
     background-color: black;
-    margin-top: 12vh;
+    margin-top: 2vh;
     margin-left: 1%;
     border-radius: 10px;
     transition: .4s;
-    width: 10%;
+    width: 190px;
     text-align: center;
 }
 .advisor_title:hover{
@@ -67,9 +67,14 @@ body{
 }
 
 
+hr.line{
+    border-top:1px solid white ;
+}
+
 .My-Advisor{
     color: white;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     margin-top: 3vh;
@@ -83,14 +88,16 @@ body{
      justify-content: space-between;
 }
 .Advisor_img img{
-    border-radius: 10px;
+    border-radius: 100px;
     height: 100%;
     padding: 5%;
     
 }
 .Advisor_des{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
     padding: 5%;
 }
 
@@ -103,16 +110,34 @@ body{
 .Advisor_des p{
     font-size: 34px;
 }
+hr{
+    border: 1px solid white;
+    width: 100%;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    padding-right: 5.5%;
+}
+.research{
+    border-left: 3px solid white;
+    padding-left: 5%;
+}
 @media(max-width : 1300px){
     .Advisor_img {
         display: block;
         flex-direction: row;
     }
     .Advisor_img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        left: 35%;
-        right: 35%;
+        left: 32%;
         height: 100%;
+        border-radius: 75px;
     }
     .advisor_title{
         display: flexbox;
@@ -127,20 +152,53 @@ body{
     .icon_menu{
         display: block;
     }
+    hr{
+        display: none;
+    }
+
+    .Advisor_des{
+        padding: 2%;
+    }
+    .box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .introduction{
+        padding-right: 3.5%;
+    }
+    .education{
+        border-left: 3px solid white;
+        padding-left: 3%;
+    }
+    #prof{
+        display: block;
+        font-weight: normal;
+    }
+    .contact hr{
+        display: block;
+    }
+    .free-hr{
+        margin-top: 2%;
+        display: block;
+    }
+    .contact{
+        padding-top: 2%;
+    }
 }
 @media(max-width:900px){
     .Advisor_img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        left: 28%;
-        right: 28%;
     }
+    
 }
 @media(max-width:600px){
     .Advisor_img img{
-        position: relative;
+        border-radius: 50px;
         left: 20%;
         right: 20%;
-        width: auto;
     }
 }
    
