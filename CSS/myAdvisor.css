@@ -201,4 +201,18 @@ hr{
         right: 20%;
     }
 }
+@media(max-width:600px){
+    .Advisor_img img{
+        border-radius: 50px;
+        left: 20%;
+        right: 20%;
+    }
+}@media(max-width:565px){
+    .Advisor_des p{
+        font-size: 25px;
+    }
+    .Advisor_des span{
+        font-size: 28px;
+    }
+}
    
