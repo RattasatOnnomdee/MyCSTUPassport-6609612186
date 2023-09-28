@@ -59,16 +59,24 @@ body{
 }
 .orient_describe {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     flex-direction: row;
 }
 .orient_describe img{
-    width: 70%;
-    padding: 10%;
+    width: 50%;
+    padding: 5%;
     border-radius: 120px;
 }
 .orient_describe p{
     padding-left: 10%;
+}
+
+.orient_title{
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    margin: 3%;
+    color: black;
 }
 @media(max-width : 1180px){
     .icon_menu{
@@ -89,7 +97,7 @@ body{
     .orient_describe img{
         padding:5% 0 5% 0 ;
         width: 70%;
-        border-radius: 10%;
+        border-radius: 100px;
     }
     .orient_describe p{
         padding: 0;
@@ -99,5 +107,13 @@ body{
     .orient_describe img{
         padding:5% 0 5% 0 ;
         width: 70%;
+        border-radius: 80px;
+    }
+}
+@media(max-width:550px){
+    .orient_describe img{
+        padding:5% 0 5% 0 ;
+        width: 100%;
+        border-radius: 60px;
     }
 }
