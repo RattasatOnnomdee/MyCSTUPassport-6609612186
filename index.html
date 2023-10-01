@@ -1,28 +1,45 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My CSTU Passport</title>
-        <link rel="icon" type="image/x-icon" href="../TU_Img.jpg">
-        <style>
-            p,h1{
-                color :rgb(20, 109, 109);
-            }
-            .title{
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        
-        <h1 class="title">Introduction</h1>
-       <p><b>ชื่อ-สกุล :รัฐศาสตร์ อ่อนน้อมดี</b></p>
-       <p><b>ชื่อเล่น : แชมป์</b></p>
-       <p><b>คณะ/สาขาวิชา : คณะวิทยาศาสตร์และเทคโนโลยี/วิทยาการคอมพิวเตอร์</b></p>
-        <p><b>รหัสนักศึกษา : 6609612186</b></p>
-        <p><b>งานอดิเรก : นอนหลับ เล่นเกม</b></p>
-        <p><b>สิ่งที่ชอบ : การนอนหลับ</b></p>
-        <img src="../image/6609612186.jpg" alt="6609612186.jpg" width="250px" height="300px"><br> 
-       <p>Video แนะนำตัว</p>
-       <video src="../video/introduction.mp4" alt="Introduction" width="500px" height="300px" controls></video>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/MyHomepage.css">
+    <title>My Homepage</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">CSTU Passport</a>
+        <img src="../image/menu-regular-24.png" alt="menu_hamburger" class="icon_menu">
+        <nav class="navbar">
+            <a href="../html/MyHomepage.html" class="Homepage" target="_self">Homepage</a>
+            <a href="../html/myAdvisor.html" target="_self">My Advisor</a>
+            <a href="../html/myActivites.html" target="_self">My Activities</a>
+        </nav>
+    </header>
+
+    <h1 class="homepage_title">Home<span>page</span></h1>
+
+        <div class="img-info"> 
+                <img class = "My-picture" src = "../image/6609612186.jpg" alt="6609612186.jpg"><br>
+                <div class="img_describe">
+                    <hr>
+                    <p><b><span>- ชื่อ-สกุล</span> : รัฐศาสตร์ อ่อนน้อมดี (Rattasat Onnomdee)<br>
+                    <span>- ชื่อเล่น</span> : แชมป์(Champ)<br>
+                    <span>- คณะ / สาขาวิชา</span> : คณะวิทยาศาสตร์และเทคโนโลยี / วิทยาการคอมพิวเตอร์<br>
+                    <span>- รหัสนักศึกษา</span> : 6609612186<br>
+                    <span>- งานอดิเรก</span> : นอนหลับ เล่นเกม<br>
+                    <span>- ช่องทางการติดต่อ</span> : rattasat.onn@dome.tu.ac.th<br>
+                    <span>- สิ่งที่ชอบ</span> : การนอนหลับ</b></p>
+                    <br><hr>
+                </div>   
+        </div>
+        <section class="video-info">
+            <p class="video-title"><br>Video Presentation</p><hr>    
+            <div><video src="../video/introduction.mp4" controls alt ="Introduction" class="video-edit"></video></div>
+        </section>
+
     </body>
 </html>
