@@ -186,7 +186,7 @@ hr{
 }
 @media (max-width: 450px){
     .img_describe p{
-        font-size: 26px;
+        font-size: 25px;
         font-weight: normal;
         padding-top:34px;
     }
