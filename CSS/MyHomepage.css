@@ -149,16 +149,21 @@ hr{
         display: block;
     }
     .img-info{
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .My-picture{
         position: relative;
-        width: 60%;
-        left: 21.5%;
+        width: 50%;
+        left: 1%;
         border-radius: 75px;
     }
     .img_describe{
         padding-left: 30px;
+    }
+    .img_describe p{
+        font-size: 30px;
     }
     .video-edit{
         display: inline-block;
@@ -169,7 +174,10 @@ hr{
         padding-bottom: 25px;
     }
 }
-@media (max-width: 768px){
+@media (max-width: 900px){
+    .img-info{
+        display: block;
+    }
     .My-picture{
         position: relative;
         width: 60%;
@@ -184,7 +192,7 @@ hr{
         padding-bottom: 25px;
     }
 }
-@media (max-width: 450px){
+@media (max-width: 768px){
     .img_describe p{
         font-size: 25px;
         font-weight: normal;
