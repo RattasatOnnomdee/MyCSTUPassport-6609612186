@@ -131,7 +131,7 @@ hr{
 }
 
 
-@media(max-width : 1300px){
+@media(max-width : 1200px){
     .homepage_title{
         display: flexbox;
         justify-content: center;
@@ -184,7 +184,7 @@ hr{
         padding-bottom: 25px;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 450px){
     .img_describe p{
         font-size: 25px;
         font-weight: normal;
