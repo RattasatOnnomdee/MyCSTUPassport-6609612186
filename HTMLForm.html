@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital@1&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Reg.css">
+    <title>Library Member Register</title>
+</head>
+<body>
+    <form id="StudentForm" action="#" method="get">
+        <div>
+            <h1>Library Member Register</h1>
+        </div>
+        <div class="StudentName">
+            <label for="Name">Firstname and Lastname(Thai *Not enter Mr./Mrs.)<span class="required ">*</span></label><br>
+            <input id="Name" type="text" required>
+            <label for="Name">Firstname and Lastname(Eng *Not enter Mr./Mrs.) <span class="required">*</span></label><br>
+            <input id="Name" type="text" required>
+        </div>
+        
+        <div class="StudentGender">
+            <label for="Gender">Gender <span class="required ">*</span></label>
+            <div class="gender">
+                <select name="Gender" id="Gender">
+                    <option value="" disabled>Select your Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Others</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="StudentID">
+            <label for="ID">Student ID <span class="required">*</span></label>
+            <input type="text" name="ID" id="ID" required>
+            <small>Please enter 10 digits number</small>
+        </div>
+
+        <div class="StudentFaculty">
+            <label for="faculty">Faculty<span class="required">*</span></label>
+            <input type="text" name="faculty" id="faculty" required>
+        </div>
+
+        <div class="StudentEmail">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="StudentBirthday">
+            <label for="birthday">Birthday<span class="required">*</span></label>
+            <input type="date" name="birthday" id="birthday" required>
+        </div>
+
+        <div class="StudentComment">
+            <label for="comment">Comments</label>
+            <textarea name="comment" id="comment" rows="5" cols="40" required></textarea>
+        </div>
+
+        <div class="Submit">
+            <input type="button" name="submit" id="submit" value="sumbit">
+        </div>
+    </form>
+    
+</body>
+</html>
